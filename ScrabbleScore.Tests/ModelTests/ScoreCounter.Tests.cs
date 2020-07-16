@@ -16,9 +16,16 @@ namespace ScrabbleScore.TestTools
     }
 
     [TestMethod]
-    public void DictionaryConstructor_CreatesInstanceOfLetterDictionary_LetterDictionary()
+    public void Score_ReturnsInt_Int()
     {
-      Assert.AreEqual(typeof(Dictionary <string, int>), ScoreCounter.charScoreDictionary.GetType());
+      //Arrange
+      string testString = "Hello";
+
+      //Act
+      int testScore = ScoreCounter.Score(testString);
+
+      //Assert
+      Assert.AreEqual(typeof(int), ScoreCounter.Score(testString).GetType());
     }
   }
 }
