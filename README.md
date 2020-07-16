@@ -15,7 +15,6 @@ _This program will return a Scrabble score based upon the letters present in the
 |The program contains a Dictionary which has every letter and their corresponding score value |N/A | N/A |
 |The ScoreCounter class has a Score() method to take in a string and return a number | H | 4 |
 |The Score() method locates a letter in the dictionary and returns it's value|Letter: "P" |Value: 3  |
-
 |The Score() method should be able to locate the values of multiple letters in a multiple character string and return their cumulative value|String: "Hello" |Value: 8|
 
 |The program is able to accept user input of only letter characters in the console|  |  |
