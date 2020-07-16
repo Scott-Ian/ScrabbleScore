@@ -45,7 +45,7 @@ namespace ScrabbleScore.TestTools
     public void Score_ReturnsTotalWordScore_Int()
     {
       //Arrange
-      string testWord = "Hello";
+      string testWord = "HELLO";
 
       //Act
       int testWordScore = ScoreCounter.Score(testWord);
