@@ -38,8 +38,8 @@ namespace ScrabbleScore.Models
 
       public static int Score(string input)
       {
-
-        return 32;
+        int letterValue = _charScore[input];
+        return letterValue;
       }
 
     

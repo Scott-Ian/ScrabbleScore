@@ -19,7 +19,7 @@ namespace ScrabbleScore.TestTools
     public void Score_ReturnsInt_Int()
     {
       //Arrange
-      string testString = "Hello";
+      string testString = "H";
 
       //Act
       int testScore = ScoreCounter.Score(testString);
