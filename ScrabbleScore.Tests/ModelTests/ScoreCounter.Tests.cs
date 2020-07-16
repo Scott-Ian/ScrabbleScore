@@ -25,7 +25,20 @@ namespace ScrabbleScore.TestTools
       int testScore = ScoreCounter.Score(testString);
 
       //Assert
-      Assert.AreEqual(typeof(int), ScoreCounter.Score(testString).GetType());
+      Assert.AreEqual(typeof(int), testScore.GetType());
+    }
+
+    [TestMethod]
+    public void Score_ReturnsDictionaryValue_Int()
+    {
+      // Arrange
+      string oneLetter = "A";
+
+      // Act
+      int letterTest = ScoreCounter.Score(oneLetter);
+
+      // Assert
+      Assert.AreEqual(1, letterTest);
     }
   }
 }

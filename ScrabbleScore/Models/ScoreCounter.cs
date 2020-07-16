@@ -38,6 +38,7 @@ namespace ScrabbleScore.Models
 
       public static int Score(string input)
       {
+
         return 32;
       }
 
