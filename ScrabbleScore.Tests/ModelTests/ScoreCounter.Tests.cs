@@ -40,5 +40,18 @@ namespace ScrabbleScore.TestTools
       // Assert
       Assert.AreEqual(1, letterTest);
     }
+
+    [TestMethod]
+    public void Score_ReturnsTotalWordScore_Int()
+    {
+      //Arrange
+      string testWord = "Hello";
+
+      //Act
+      int testWordScore = ScoreCounter.Score(testWord);
+
+      //Assert
+      Assert.AreEqual(8, testWordScore);
+    }
   }
 }
